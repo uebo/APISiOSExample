@@ -14,10 +14,25 @@
 		98EFDD7419C080DD007B95C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98EFDD7319C080DD007B95C8 /* Images.xcassets */; };
 		98EFDD7719C080DD007B95C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EFDD7519C080DD007B95C8 /* LaunchScreen.xib */; };
 		98EFDD8319C080DD007B95C8 /* APISiOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFDD8219C080DD007B95C8 /* APISiOSExampleTests.m */; };
+		98EFDD8D19C085B0007B95C8 /* appiaries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EFDD8C19C085B0007B95C8 /* appiaries.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		98EFDD7D19C080DD007B95C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98EFDD5B19C080DD007B95C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98EFDD6219C080DD007B95C8;
+			remoteInfo = APISiOSExample;
+		};
+		98EFDD8E19C08841007B95C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98EFDD5B19C080DD007B95C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98EFDD6219C080DD007B95C8;
+			remoteInfo = APISiOSExample;
+		};
+		98EFDD9019C08871007B95C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98EFDD5B19C080DD007B95C8 /* Project object */;
 			proxyType = 1;
@@ -40,6 +55,7 @@
 		98EFDD7C19C080DD007B95C8 /* APISiOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APISiOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EFDD8119C080DD007B95C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98EFDD8219C080DD007B95C8 /* APISiOSExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APISiOSExampleTests.m; sourceTree = "<group>"; };
+		98EFDD8C19C085B0007B95C8 /* appiaries.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = appiaries.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EFDD8D19C085B0007B95C8 /* appiaries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 		98EFDD6519C080DD007B95C8 /* APISiOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				98EFDD8C19C085B0007B95C8 /* appiaries.framework */,
 				98EFDD6A19C080DD007B95C8 /* AppDelegate.h */,
 				98EFDD6B19C080DD007B95C8 /* AppDelegate.m */,
 				98EFDD6D19C080DD007B95C8 /* ViewController.h */,
@@ -151,6 +169,8 @@
 			);
 			dependencies = (
 				98EFDD7E19C080DD007B95C8 /* PBXTargetDependency */,
+				98EFDD8F19C08841007B95C8 /* PBXTargetDependency */,
+				98EFDD9119C08871007B95C8 /* PBXTargetDependency */,
 			);
 			name = APISiOSExampleTests;
 			productName = APISiOSExampleTests;
@@ -241,6 +261,16 @@
 			target = 98EFDD6219C080DD007B95C8 /* APISiOSExample */;
 			targetProxy = 98EFDD7D19C080DD007B95C8 /* PBXContainerItemProxy */;
 		};
+		98EFDD8F19C08841007B95C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98EFDD6219C080DD007B95C8 /* APISiOSExample */;
+			targetProxy = 98EFDD8E19C08841007B95C8 /* PBXContainerItemProxy */;
+		};
+		98EFDD9119C08871007B95C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98EFDD6219C080DD007B95C8 /* APISiOSExample */;
+			targetProxy = 98EFDD9019C08871007B95C8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -280,7 +310,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Youji Ueda (K8G8S4W6A2)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -297,9 +327,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2ab718fa-38b4-4fb8-a477-1c46b228bf5c";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -332,8 +363,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "2ab718fa-38b4-4fb8-a477-1c46b228bf5c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -343,7 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/APISiOSExample",
+				);
 				INFOPLIST_FILE = APISiOSExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +391,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/APISiOSExample",
+				);
 				INFOPLIST_FILE = APISiOSExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +456,7 @@
 				98EFDD8819C080DD007B95C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98EFDD8919C080DD007B95C8 /* Build configuration list for PBXNativeTarget "APISiOSExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +465,7 @@
 				98EFDD8B19C080DD007B95C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
